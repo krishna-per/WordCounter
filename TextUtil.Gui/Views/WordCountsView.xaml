@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="TextUtil.Gui.Views.WordCountsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Enter text:" />
+        <TextBox Grid.Row="1" Margin="10,5,10,5" Text="{Binding Text}" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"/>
+        <Canvas Grid.Row="2">
+            <Label Canvas.Top="7" Content="Select Text parsing strategy:"/>
+            <ComboBox Canvas.Left="163" Canvas.Top="12" ItemsSource="{Binding Strategies}" Width="262" SelectedValue="{Binding Strategy, Mode=TwoWay}"  />
+        </Canvas>
+        <Button Grid.Row="3" Width="362" Height="30" Content="Get Word Counts" Command="{Binding Path=GetWordCountsCommand}"/>
+        <TextBlock  Grid.Row="4" Text="{Binding Path=WordCounts.Count, StringFormat=Total distinct words: {0}}" />
+        <ListView Grid.Row="5" ItemsSource="{Binding WordCounts}">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Width="100" Header="Word" DisplayMemberBinding="{Binding Word}"/>
+                        <GridViewColumn Width="100" Header="Occurances Count" DisplayMemberBinding="{Binding Count}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</UserControl>
