@@ -1,10 +1,10 @@
 ﻿using Microsoft.Practices.Unity;
 
-namespace TextUtil.Di
+namespace TextUtil.Factory
 {
     // We will register types for unity in code as below
 
-    public class DiUnity
+    public class Unity
     {
         private static IUnityContainer _container;
 
@@ -17,6 +17,7 @@ namespace TextUtil.Di
         {
             var container = new UnityContainer();
 
+            // Register types in TextUtilModule
             container.AddExtension(new TextUtilModule());
 
             return container;

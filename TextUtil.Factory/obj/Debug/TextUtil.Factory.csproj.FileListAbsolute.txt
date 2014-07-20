@@ -1,0 +1,15 @@
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\TextUtil.Factory.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\TextUtil.Factory.pdb
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\Microsoft.Practices.Unity.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\TextUtil.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\TextUtil.Interfaces.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\TextUtil.pdb
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\Microsoft.Practices.Unity.xml
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\bin\Debug\TextUtil.Interfaces.pdb
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\obj\Debug\TextUtil.Factory.csprojResolveAssemblyReference.cache
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\obj\Debug\TextUtil.Factory.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Factory\obj\Debug\TextUtil.Factory.pdb

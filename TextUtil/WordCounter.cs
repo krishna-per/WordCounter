@@ -9,7 +9,7 @@ namespace TextUtil
     {
         private readonly ITextSplitter _splitter;
 
-        private static readonly char[] Separators = { '.', '?', '!', ' ', ';', ':', ',', '\r', '\n' };
+        public static readonly char[] WordSeparators = { '.', '?', '!', ' ', ';', ':', ',', '\r', '\n' };
         
         public WordCounter(ITextSplitter splitter)
         {
@@ -18,15 +18,21 @@ namespace TextUtil
 
         public IEnumerable<WordCount> GetWordCounts(string text)
         {
-            return GetWordCounts(text, Separators);
-        }
+            // Use our internal list of word separators
 
+            return GetWordCounts(text, WordSeparators);
+        }
+        
         public IEnumerable<WordCount> GetWordCounts(string text, char[] separators)
         {
+            // This overload method allows users to pass their own separator list (eg. they can add symbols also as word separators)
+
             if (text == null)
             {
                 throw new ArgumentNullException("text");
             }
+
+            // splitter just splits a sentence into words
 
             var words = _splitter.GetWords(text, separators);
 

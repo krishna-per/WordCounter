@@ -32,6 +32,8 @@ namespace TextUtil.TextSplitters
             var regex = new Regex("[\\w]+", RegexOptions.Multiline | RegexOptions.CultureInvariant | RegexOptions.Compiled);
             
             return regex.Matches(text).Cast<object>().Select(m => m.ToString());
+
+            // return regex.Split(text);
         }
     }
 }

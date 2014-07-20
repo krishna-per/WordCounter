@@ -7,8 +7,8 @@
     <ProjectGuid>{350D3FC6-CB76-4BF4-9401-CFF6C8DB3EF6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TextUtil.Di</RootNamespace>
-    <AssemblyName>TextUtil.Di</AssemblyName>
+    <RootNamespace>TextUtil.Factory</RootNamespace>
+    <AssemblyName>TextUtil.Factory</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DiUnity.cs" />
+    <Compile Include="Unity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

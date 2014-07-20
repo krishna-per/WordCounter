@@ -4,10 +4,8 @@ C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\Microsoft.Practic
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\Microsoft.Practices.Unity.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\nunit.framework.dll
-C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\TextUtil.Di.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\TextUtil.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\TextUtil.Interfaces.dll
-C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\TextUtil.Di.pdb
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\TextUtil.Interfaces.pdb
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\TextUtil.pdb
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\Microsoft.Practices.Unity.xml
@@ -17,3 +15,5 @@ C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\nunit.framework.x
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\obj\Debug\TextUtil.Tests.csprojResolveAssemblyReference.cache
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\obj\Debug\TextUtil.Tests.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\obj\Debug\TextUtil.Tests.pdb
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\TextUtil.Factory.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Tests\bin\Debug\TextUtil.Factory.pdb

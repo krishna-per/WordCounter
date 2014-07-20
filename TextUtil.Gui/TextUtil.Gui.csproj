@@ -115,9 +115,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TextUtil.Di\TextUtil.Di.csproj">
+    <ProjectReference Include="..\TextUtil.Factory\TextUtil.Factory.csproj">
       <Project>{350d3fc6-cb76-4bf4-9401-cff6c8db3ef6}</Project>
-      <Name>TextUtil.Di</Name>
+      <Name>TextUtil.Factory</Name>
     </ProjectReference>
     <ProjectReference Include="..\TextUtil.Interfaces\TextUtil.Interfaces.csproj">
       <Project>{cf532fb7-5f2b-42ff-ab6a-20c09a01be2e}</Project>

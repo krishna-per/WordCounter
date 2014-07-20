@@ -18,8 +18,8 @@
         <Label Grid.Row="0" Content="Enter text:" />
         <TextBox Grid.Row="1" Margin="10,5,10,5" Text="{Binding Text}" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"/>
         <Canvas Grid.Row="2">
-            <Label Canvas.Top="7" Content="Select Text parsing strategy:"/>
-            <ComboBox Canvas.Left="163" Canvas.Top="12" ItemsSource="{Binding Strategies}" Width="262" SelectedValue="{Binding Strategy, Mode=TwoWay}"  />
+            <Label Canvas.Top="7" Content="Text parsing strategy:"/>
+            <ComboBox Canvas.Left="137" Canvas.Top="12" ItemsSource="{Binding Strategies}" Width="262" SelectedValue="{Binding Strategy, Mode=TwoWay}"  />
         </Canvas>
         <Button Grid.Row="3" Width="362" Height="30" Content="Get Word Counts" Command="{Binding Path=GetWordCountsCommand}"/>
         <TextBlock  Grid.Row="4" Text="{Binding Path=WordCounts.Count, StringFormat=Total distinct words: {0}}" />

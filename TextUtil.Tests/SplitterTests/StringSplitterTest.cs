@@ -1,6 +1,6 @@
 using Microsoft.Practices.Unity;
 using NUnit.Framework;
-using TextUtil.Di;
+using TextUtil.Factory;
 using TextUtil.Interfaces;
 using TextUtil.TextSplitters;
 
@@ -11,7 +11,7 @@ namespace TextUtil.Tests.SplitterTests
     {
         protected override ITextSplitter CreateSplitter()
         {
-            return DiUnity.Container.Resolve<ITextSplitter>("StringSplitter");
+            return Unity.Container.Resolve<ITextSplitter>("StringSplitter");
 
             //return new StringSplitter();
         }

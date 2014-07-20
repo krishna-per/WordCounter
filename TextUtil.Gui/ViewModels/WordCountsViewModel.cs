@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Input;
 using Microsoft.Practices.Unity;
-using TextUtil.Di;
+using TextUtil.Factory;
 using TextUtil.Interfaces;
 
 namespace TextUtil.Gui.ViewModels
@@ -80,10 +80,10 @@ namespace TextUtil.Gui.ViewModels
             try
             {
                 // Based on the selected strategy, create corresponding splitter
-                var splitter = DiUnity.Container.Resolve<ITextSplitter>(Strategy);
+                var splitter = Unity.Container.Resolve<ITextSplitter>(Strategy);
 
                 // Create word counter object passing the splitter
-                var wordCounter = DiUnity.Container.Resolve<IWordCounter>(new DependencyOverride<ITextSplitter>(splitter));
+                var wordCounter = Unity.Container.Resolve<IWordCounter>(new DependencyOverride<ITextSplitter>(splitter));
 
                 // invoke the GetWordCounts
                 var wordCounts = wordCounter.GetWordCounts(Text);

@@ -2,14 +2,14 @@
 using System.Linq;
 using Microsoft.Practices.Unity;
 using NUnit.Framework;
-using TextUtil.Di;
+using TextUtil.Factory;
 using TextUtil.Interfaces;
 
 namespace TextUtil.Tests
 {
     // This test class shows the flow of TDD process. 
     
-    // 1. First create TextUtil.Tests project and this TDD_WordCounterTests class
+    // 1. The very task in this project is - create TextUtil.Tests project and this TDD_WordCounterTests class
     // 2. Then create TextUtil project where the word counting classes will be created
     // 3. Then TDD as shown in this test class
 
@@ -22,10 +22,11 @@ namespace TextUtil.Tests
         public void Setup()
         {
             // Not using any mocking frameworks in this project, so lets use our own mock object
+            // to keep WordCounterTest independent of actual splitter implementations
 
             var textSplitter = new TextSplitterMock();
 
-            _wordCounter = DiUnity.Container.Resolve<IWordCounter>(new DependencyOverride<ITextSplitter>(textSplitter));
+            _wordCounter = Unity.Container.Resolve<IWordCounter>(new DependencyOverride<ITextSplitter>(textSplitter));
         }
 
         [Test]
@@ -33,9 +34,9 @@ namespace TextUtil.Tests
         {
             // First we need to create an object that does the word counting.
             // First line of code in this project was this -> var wordCounter = new WordCounter(); 
-            // But later this line got refactored to push the actual object creation to derived classes (possibly later by Dependency Injection framework)
+            // But later this line got refactored to use Unity dependency injection framework.
 
-            // WordCounter object should have been created
+            // Should be able to create WordCounter object
             Assert.IsNotNull(_wordCounter);
 
             // DEV: Add an empty class WordCounter now 
@@ -67,6 +68,7 @@ namespace TextUtil.Tests
             // TEST: Run the test, it should pass.
         }
 
+        // Passing null as argument to this method should throw exception
         [Test]
         [ExpectedException(typeof (ArgumentNullException))]
         public void ShouldThrowExceptionForNullText()
@@ -224,7 +226,7 @@ namespace TextUtil.Tests
             // TEST: Run this and all the above tests after this DEV change, all should pass
         }
 
-        // So far users are restricted for WordCounter's internal list of separators only.
+        // So far users are restricted for WordCounter's internal list of word separators only.
         // For custom situations that might arise with users, lets facilitate for user to pass his own list of separators.
         [Test]
         public void ShouldUseUserGivenSeparators()
@@ -244,7 +246,8 @@ namespace TextUtil.Tests
         }
 
         // Currently we use string.split method to parse the sentence into words.
-        // But there are other efficient ways of doing this like using RegEx and our own loop-n-parse
+        // But there are other efficient ways of doing this like using RegEx and our own loop-n-parse 
+        // Well, end user wouldn't care about this. But it adds an example for a pattern usage.
         // Strategy pattern can be used for this - the WordCounter can use different strategies to split sentence into words.
 
         // DEV: Refactor the code. Separate the split part from WordCounter class and replace it with an abstraction/interface ITextSplitter
