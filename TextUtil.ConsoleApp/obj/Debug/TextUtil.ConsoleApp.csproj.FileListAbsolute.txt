@@ -4,8 +4,10 @@ C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\TextUtil.Con
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\Microsoft.Practices.Unity.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\TextUtil.Factory.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\TextUtil.Interfaces.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\TextUtil.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\TextUtil.Factory.pdb
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\TextUtil.Interfaces.pdb
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\Microsoft.Practices.Unity.xml
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
@@ -14,5 +16,3 @@ C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\TextUtil.pdb
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\obj\Debug\TextUtil.ConsoleApp.csprojResolveAssemblyReference.cache
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\obj\Debug\TextUtil.ConsoleApp.exe
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\obj\Debug\TextUtil.ConsoleApp.pdb
-C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\TextUtil.Factory.dll
-C:\DATA\Projects\TextUtil\WordCounter\TextUtil.ConsoleApp\bin\Debug\TextUtil.Factory.pdb

@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("TextUtil.Gui")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hewlett-Packard Company")]
+[assembly: AssemblyCompany("github.com krishna-per")]
 [assembly: AssemblyProduct("TextUtil.Gui")]
-[assembly: AssemblyCopyright("Copyright © Hewlett-Packard Company 2014")]
+[assembly: AssemblyCopyright("github.com krishna-per")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

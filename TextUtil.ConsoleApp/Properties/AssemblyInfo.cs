@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("TextUtil.ConsoleApp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hewlett-Packard Company")]
+[assembly: AssemblyCompany("github.com krishna-per")]
 [assembly: AssemblyProduct("TextUtil.ConsoleApp")]
-[assembly: AssemblyCopyright("Copyright © Hewlett-Packard Company 2014")]
+[assembly: AssemblyCopyright("github.com krishna-per")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

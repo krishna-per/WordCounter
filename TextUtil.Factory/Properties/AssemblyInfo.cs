@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("TextUtil.Factory")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("github.com-krishna-per")]
+[assembly: AssemblyCompany("github.com krishna-per")]
 [assembly: AssemblyProduct("TextUtil.Factory")]
-[assembly: AssemblyCopyright("github.com-krishna-per")]
+[assembly: AssemblyCopyright("github.com krishna-per")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

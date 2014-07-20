@@ -4,8 +4,10 @@ C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\TextUtil.Gui.pdb
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\Microsoft.Practices.Unity.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\TextUtil.Factory.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\TextUtil.Interfaces.dll
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\TextUtil.dll
+C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\TextUtil.Factory.pdb
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\TextUtil.Interfaces.pdb
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\Microsoft.Practices.Unity.xml
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
@@ -25,5 +27,3 @@ C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\obj\Debug\TextUtil.Gui.Proper
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\obj\Debug\TextUtil.Gui.csproj.GenerateResource.Cache
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\obj\Debug\TextUtil.Gui.exe
 C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\obj\Debug\TextUtil.Gui.pdb
-C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\TextUtil.Factory.dll
-C:\DATA\Projects\TextUtil\WordCounter\TextUtil.Gui\bin\Debug\TextUtil.Factory.pdb
