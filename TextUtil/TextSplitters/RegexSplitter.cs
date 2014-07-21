@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using TextUtil.Interfaces;
@@ -25,15 +26,15 @@ namespace TextUtil.TextSplitters
                 throw new InvalidOperationException("Atleast one separator must be specified");
             }
 
-            // TODO - Use separators in regex pattern - to be done later. But currently \w pattern already supports most of the word separators.
+            // Make regex pattern with the separators
+            var separatorStrings = separators.Select(c => c.ToString(CultureInfo.InvariantCulture)).ToArray();
+            var pattern = "(" + string.Join("|", separatorStrings.Select(Regex.Escape)) + ")";
 
-            // var regex = new Regex(@"[A-Za-z0-9]+");
-
-            var regex = new Regex("[\\w]+", RegexOptions.Multiline | RegexOptions.CultureInvariant | RegexOptions.Compiled);
+            // regex split result includes the separators as well, remove them and empty strings and then rerun
+            return Regex.Split(text, pattern).Where(s => !separatorStrings.Contains(s) && s.Length > 0);
             
-            return regex.Matches(text).Cast<object>().Select(m => m.ToString());
-
-            // return regex.Split(text);
+            //var regex = new Regex("[\\w]+", RegexOptions.Multiline | RegexOptions.CultureInvariant | RegexOptions.Compiled);
+            //return regex.Matches(text).Cast<object>().Select(m => m.ToString());
         }
     }
 }
