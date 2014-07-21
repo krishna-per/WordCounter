@@ -24,14 +24,33 @@ namespace TextUtil.TextSplitters
                 throw new InvalidOperationException("Atleast one separator must be specified");
             }
 
-            // TODO - Add our own word parsing logic here - by looping through the text and test each char 
-            // To be done later, now the important thing is to show the usage of Strategy pattern.
-            // Internal implementation can remain simple, for now we will use string.split.
+            var words = new List<string>();
+            var start = 0;
+            for (var n = 0; n < text.Length; n++)
+            {
+                if (separators.Contains(text[n]))
+                {
+                    if (n > start)
+                    {
+                        words.Add(text.Substring(start, n - start));
+                    }
+
+                    start = n + 1;
+                }
+
+                if (n == text.Length - 1) // end of text
+                {
+                    if (n > start)
+                    {
+                        words.Add(text.Substring(start, n - start + 1));
+                    }
+                }
+            }
 
             // Using this kind of parse split, we can add event based parsing to avoid storing all words in memory at once, 
             // which would help when dealing with large text. But that depends on the end usage of splitter. 
 
-            return text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+            return words;
         }
     }
 }
